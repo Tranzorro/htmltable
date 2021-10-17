@@ -8,6 +8,19 @@
     <title>html table</title>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Full Name</td>
+        </tr>
+        {%for x in userlist:%}
+        <tr>
+            <td>{{x['First_name']}}</td>
+            <td>{{x['Last_name']}}</td>
+            <td>{{x['First_name']}} {{x['Last_name']}}</td>
+        </tr>
+        {%endfor%}
+    </table>
 </body>
 </html>
